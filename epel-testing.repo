@@ -1,0 +1,32 @@
+[epel-testing]
+name=Extra Packages for Enterprise Linux 7 - Testing - $basearch
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=http://download.example/pub/epel/testing/7/$basearch
+metalink=https://mirrors.fedoraproject.org/metalink?repo=testing-epel7&arch=$basearch&infra=$infra&content=$contentdir
+failovermethod=priority
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+
+[epel-testing-debuginfo]
+name=Extra Packages for Enterprise Linux 7 - Testing - $basearch - Debug
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=http://download.example/pub/epel/testing/7/$basearch/debug
+metalink=https://mirrors.fedoraproject.org/metalink?repo=testing-debug-epel7&arch=$basearch&infra=$infra&content=$contentdir
+failovermethod=priority
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+gpgcheck=1
+
+[epel-testing-source]
+name=Extra Packages for Enterprise Linux 7 - Testing - $basearch - Source
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place it's address here.
+#baseurl=http://download.example/pub/epel/testing/7/source/tree/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=testing-source-epel7&arch=$basearch&infra=$infra&content=$contentdir
+failovermethod=priority
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+gpgcheck=1
