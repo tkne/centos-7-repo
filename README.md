@@ -1,7 +1,6 @@
-CentOS 7 yum repository
-======
+# CentOS 7 yum repository
 
-Working CentOS 7 yum repository files to replace the .repo files in your /etc/yum.repos.d folder on your CentOS 7 server.
+> Working CentOS 7 yum repository files to replace the .repo files in your /etc/yum.repos.d folder on your CentOS 7 server.
 
 ## Usage:
 Navigate to the `/etc` folder:
@@ -39,4 +38,5 @@ yum update
 
 </br>
 
-In case you have other external repositories installed as well, you'll need to edit each .repo dotfile and replace the settings manually.
+> [!IMPORTANT]
+> In case you have other external repositories installed as well, you'll need to edit each .repo dotfile and replace the settings manually.
